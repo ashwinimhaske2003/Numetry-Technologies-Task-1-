@@ -1,0 +1,74 @@
+/* Styles for cart items */
+.productItems {
+    flex-basis: calc(25% - 20px); /* Set each card to occupy one-fourth of the parent's width minus margins */
+    margin: 10px; /* Add margin to the bottom and sides of each card */
+    padding: 10px; /* Adjust padding for each card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 6px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Set background color */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for cart items */
+.productItems:hover {
+    transform: translateY(-3px); /* Move the card upwards on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add stronger shadow on hover */
+}
+
+/* Style for cart item images */
+.productItems img {
+    height: auto; /* Allow the image to adjust its height */
+    max-width: 100%; /* Ensure the image does not exceed the card's width */
+    border-radius: 6px; /* Add rounded corners to the image */
+}
+
+/* Styles for cart item titles */
+.productItems h5 {
+    margin: 5px 0; /* Adjust margin for the title */
+    font-size: 14px; /* Adjust font size for the title */
+}
+
+/* Styles for cart item vendor */
+.productItems h6 {
+    margin: 5px 0; /* Adjust margin for the vendor */
+    font-size: 12px; /* Adjust font size for the vendor */
+    color: #666; /* Set color for the vendor */
+}
+
+/* Styles for cart item price */
+.productItems h6:last-child {
+    margin: 5px 0; /* Adjust margin for the price */
+    font-size: 14px; /* Adjust font size for the price */
+    color: #333; /* Set color for the price */
+}
+
+
+
+
+/* Styles for the reset button */
+#resetAllButton {
+    background-color: #821d79; /* Red background color */
+    border: none;
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Set font size */
+    margin-top: 20px; /* Add margin from the top */
+    cursor: pointer; /* Add cursor pointer */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add transition effect for background color */
+}
+
+#resetAllButton:hover {
+    background-color: #993333; /* Darker red background color on hover */
+}
+
+h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-style:normal;
+    
+}

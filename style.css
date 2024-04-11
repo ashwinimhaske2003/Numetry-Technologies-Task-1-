@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Add CSS for the "Add to Cart" button */
+.addToCartButton {
+    background-color: #6a5b83; /* Green background color */
+    border: none;
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Set font size */
+    margin-top: 10px; /* Add some margin to separate from other elements */
+    cursor: pointer; /* Add cursor pointer */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add transition effect for background color */
+}
+
+.addToCartButton:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+}
+
+#viewCartButton {
+    background-color: #744672; /* Blue background color */
+    border: none;
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Set font size */
+    margin-top: 20px; /* Add margin from the top */
+    cursor: pointer; /* Add cursor pointer */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add transition effect for background color */
+}
+
+#viewCartButton:hover {
+    background-color: #005f70; /* Darker blue background color on hover */
+}
+
+
+/* Hide default checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    border: 2px solid #000; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px; /* Add some spacing between checkbox and label */
+}
+
+/* Custom checkbox checked state */
+input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    font-size: 14px; /* Adjust size as needed */
+    line-height: 20px; /* Vertically center checkmark */
+    color: #fff; /* Color of checkmark */
+    text-align: center;
+    display: inline-block;
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-color: #000; /* Background color when checked */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Hover effect for checkbox */
+input[type="checkbox"]:hover {
+    border-color: #333; /* Change border color on hover */
+}
+
+/* Checked state hover effect */
+input[type="checkbox"]:checked:hover::before {
+    background-color: #333; /* Change background color when checked and hovered */
+}
+
+/* Apply checkbox styling to labels */
+label.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin between checkboxes */
+}
+
+body {
+   background-color: #cfb7c9;
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+
+}
+header {
+    background-color: #c59090;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  
+ 
+   
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    margin-left: 10px;
+}
+
+.navbar-item input[type="text"], .navbar-item button {
+    background-color: #e5e5e5;
+    
+    border: none;
+    color: rgb(5, 5, 5);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-item input[type="text"]:focus, .navbar-item button:hover {
+    background-color: #fdfcfd;
+}
+
+.filterBox {
+    flex-basis: 15%;
+    margin-left: 2%;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterBox {
+    flex-basis: 15%;
+    margin-left: 2%;
+}
+
+.product {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categoryList {
+    margin-top: 20px;
+}
+
+.categoryList label {
+    display: block;
+    padding: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#searchInput {
+    width: 100%; 
+    padding: 10px; 
+    border: 2px solid black; 
+    font-size: 16px; 
+}
+
+#searchInput:hover {
+    border-color: #333; 
+}
+
+
+
+.productItems {
+    flex-basis: calc(33.33% - 20px); /* Set each card to occupy one-third of the parent's width minus margins */
+    margin: 50px;/* Add margin to the bottom of each card */
+    margin-right: 30px;
+    padding: 20px; /* Adjust padding for each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    border-radius: 8px; /* Add rounded corners */
+    background-color: #dcd1d9; /* Set background color */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.productItems:hover {
+    transform: translateY(-5px); /* Move the card upwards on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add stronger shadow on hover */
+}
+
+.productItems h6,
+.productItems h5 {
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.productItems h6 span {
+    text-decoration: line-through;
+}
+
+.productItems hr {
+    margin: 8px 0; /* Adjust margin for the horizontal rule */
+}
+
+.productItems img {
+    height: 80%; /* Set height to fill the card */
+    width: 100%; /* Make the image fill the entire width of the card */
+    object-fit: cover; /* Scale the image while preserving aspect ratio */
+    border-radius: 8px; /* Add rounded corners to the image */
+}
+
