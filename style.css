@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* Add CSS for the "Add to Cart" button */
+
 .addToCartButton {
     background-color: #6a5b83; /* Green background color */
     border: none;
@@ -44,7 +44,7 @@
 }
 
 
-/* Hide default checkbox */
+
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
@@ -58,7 +58,7 @@ input[type="checkbox"] {
     margin-right: 5px; /* Add some spacing between checkbox and label */
 }
 
-/* Custom checkbox checked state */
+
 input[type="checkbox"]:checked::before {
     content: "\2713"; /* Unicode character for checkmark */
     font-size: 14px; /* Adjust size as needed */
@@ -72,17 +72,16 @@ input[type="checkbox"]:checked::before {
     border-radius: 4px; /* Rounded corners */
 }
 
-/* Hover effect for checkbox */
 input[type="checkbox"]:hover {
     border-color: #333; /* Change border color on hover */
 }
 
-/* Checked state hover effect */
+
 input[type="checkbox"]:checked:hover::before {
     background-color: #333; /* Change background color when checked and hovered */
 }
 
-/* Apply checkbox styling to labels */
+
 label.checkbox-label {
     display: flex;
     align-items: center;
